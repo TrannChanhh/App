@@ -5,8 +5,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <StartupObject>Homework.Homework</StartupObject>
+    <Nullable>enable</Nullable> 
+    <!-- <StartupObject>C_.Program</StartupObject> -->
+    <!-- <StartupObject>Homework.Homework</StartupObject> -->
+    <StartupObject>Homework.For_While_DoWhile</StartupObject>
   </PropertyGroup>
 
 </Project>

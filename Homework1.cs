@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Homework;
 
 
@@ -49,33 +51,68 @@ class Homework
 
 
         // Bai 2 giai phuong trinh bac 2
-        Console.Write("Input a: ");
-        var a = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Input b: ");
-        var b = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Input c: ");
-        var c = Convert.ToDouble(Console.ReadLine());
-        var delta = b * b - 4 * a * c;
+        // Console.Write("Input a: ");
+        // var a = Convert.ToDouble(Console.ReadLine());
+        // Console.Write("Input b: ");
+        // var b = Convert.ToDouble(Console.ReadLine());
+        // Console.Write("Input c: ");
+        // var c = Convert.ToDouble(Console.ReadLine());
+        // var delta = b * b - 4 * a * c;
 
-        if(a != 0)
-        {
-            Console.WriteLine($"delta = {delta}");
-            if(delta == 0)  // 2,4,2
-            {
-                var x1 = -b / (2 * a);
-                Console.WriteLine($"Phuong trinh co nghiem kep: x1 = x2 = {x1}");
-            } 
-            if(delta > 0)  //1,3,2
-            {
-                var x1 = -b + Math.Sqrt(delta) / (2 * a);
-                var x2 = -b - Math.Sqrt(delta) / (2 * a);
-                Console.WriteLine($"Phuong trinh co 2 nghiem la: x1 = {x1}, x2 = {x2}");
-            } 
-            if(delta < 0)  //5,1,2,
-            {
-                Console.WriteLine("Phuong trinh vo nghiem");
-            }
+        // if(a != 0)
+        // {
+        //     Console.WriteLine($"delta = {delta}");
+        //     if(delta == 0)  // 2,4,2
+        //     {
+        //         var x1 = -b / (2 * a);
+        //         Console.WriteLine($"Phuong trinh co nghiem kep: x1 = x2 = {x1}");
+        //     } 
+        //     if(delta > 0)  //1,3,2
+        //     {
+        //         var x1 = -b + Math.Sqrt(delta) / (2 * a);
+        //         var x2 = -b - Math.Sqrt(delta) / (2 * a);
+        //         Console.WriteLine($"Phuong trinh co 2 nghiem la: x1 = {x1}, x2 = {x2}");
+        //     } 
+        //     if(delta < 0)  //5,1,2,
+        //     {
+        //         Console.WriteLine("Phuong trinh vo nghiem");
+        //     }
             
-        }
+        // }
+        // Console.Write("Input your semester grades: ");
+        // var grades = Convert.ToInt32(Console.ReadLine());
+
+        // if(grades >= 9  && grades <= 10)
+        // {
+        //     Console.Write("Xuat sac");
+        // }
+        // if(grades >= 8  && grades < 9)
+        // {
+        //     Console.Write("Gioi");
+        // }
+        // if(grades >= 7  && grades <8)
+        // {
+        //     Console.Write("Kha");
+        // }
+        // if(grades >= 5  && grades < 7)
+        // {
+        //     Console.Write("Trung binh");
+        // } 
+        // if(grades >= 0 && grades < 5)
+        // {
+        //     Console.Write("Yeu");
+        // } else
+        // {
+        //     Console.Write("Invalid");
+        // }
+
+
+        // Console.Write("Enter number 0-10: ");
+        // var grades = Convert.ToDouble(Console.ReadLine());
+
+        // switch(grades)
+        // {
+           
+        // }
     }
 }
