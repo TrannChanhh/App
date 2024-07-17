@@ -7,7 +7,7 @@ class For_While_DoWhile
 {
     static void Main (String[]agrs) 
     {
-        #region cau 1
+        #region cau 1 Hien thi 20 so nguyen dau tien
 
         //while
         // int i = 1;
@@ -26,7 +26,7 @@ class For_While_DoWhile
         // } while(i <= 20);
 
         #endregion
-        #region cau 2
+        #region cau 2 Tinh tong 20 so nguyen dau tien
 
         //while 
         // int sum = 0;
@@ -49,7 +49,7 @@ class For_While_DoWhile
         // Console.Write($"Tong la: {sum}");
 
         #endregion
-        #region cau 3
+        #region cau 3 Hien thi cac so %5 [1-100]
 
         //while
         // int i = 0;
@@ -71,7 +71,7 @@ class For_While_DoWhile
         // } while (i <= end);
 
         #endregion
-        #region cau 4
+        #region cau 4 Hien thi cac so %4 [1-100] lon - nho
 
         //while
         // int i = 100;
@@ -95,7 +95,7 @@ class For_While_DoWhile
         //     i--;
         // } while (i > end);
         #endregion
-        #region cau 5
+        #region cau 5 Kiem tra so nguyen to
 
         //while
         // Console.Write("Nhap vao so bat ky:");
@@ -135,11 +135,11 @@ class For_While_DoWhile
         //         Console.WriteLine($"{soNhap} la so nguyen to!");
         //     }
         #endregion
-        #region cau 6
+        #region cau 6 Hien thi 5 so %5 dau tien [1-100]
 
         //while
-        int i = 100;
-        int end = 0;
+        // int i = 100;
+        // int end = 0;
         // while (i <= 400)
         // {
         //     if(i % 5 == 0  && end < 5)
@@ -151,17 +151,108 @@ class For_While_DoWhile
         // }
 
         //do_while
-        do 
-        {
-            if(i % 5 == 0 && end < 5)
-            {
-                Console.Write(i + " ");
-            }
-            end++;
-            i += 5;
-        } while (i <= 400);
+        // do 
+        // {
+        //     if(i % 5 == 0 && end < 5)
+        //     {
+        //         Console.Write(i + " ");
+        //     }
+        //     end++;
+        //     i += 5;
+        // } while (i <= 400);
         #endregion
+        #region Hien thi so nguyen to [100-1000]
+
+        // int number = 101;
+        
+        // while (number <= 1000)
+        // {   
+        //     bool check = true;
+        //     for (int i = 2; i <= Math.Sqrt(number); i++)
+        //     {
+        //         if (number % i == 0)
+        //         {
+        //             check = false;
+        //             break;
+        //         }
+        //     } 
+        //     if (check)
+        //         {
+        //         Console.Write($"{number} ");
+        //         }
+        //     number += 2;
+        // }
 
 
+        // int number = 101;
+        
+        // do 
+        // {   
+        //     bool check = true;
+        //     for (int i = 2; i <= Math.Sqrt(number); i++)
+        //     {
+        //         if (number % i == 0)
+        //         {
+        //             check = false;
+        //             break;
+        //         }
+        //     }
+        //     if (check)
+        //     {
+        //         Console.Write($"{number} ");
+        //     }
+        //     number += 2;
+        // } while (number <= 1000);
+        
+        
+        //cách khác
+        // int number = 101;
+        
+        // while (number <= 1000)
+        // {   
+        //     bool check = true;
+        //     int i = 2;
+        //     while (i <= Math.Sqrt(number))
+        //     {
+        //         if (number % i == 0)
+        //         {
+        //             check = false;
+        //             break;
+        //         }
+        //         i++;
+        //     }
+        //     if (check)
+        //         {
+        //         Console.Write($"{number} ");
+        //         }
+        //     number += 2;
+        // }
+
+
+        int number = 101;
+        
+        do 
+        {   
+            bool check = true;
+            int i = 2;
+            while (i <= Math.Sqrt(number))
+            {
+                if (number % i == 0)
+                {
+                    check = false;
+                    break;
+                }
+                i++;
+            }
+            if (check)
+                {
+                Console.Write($"{number} ");
+                }
+            number += 2; 
+        } while (number <= 1000);
+
+        #endregion
+    
+    
     }
 }

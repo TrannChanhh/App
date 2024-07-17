@@ -8,7 +8,12 @@
     <Nullable>enable</Nullable> 
     <!-- <StartupObject>C_.Program</StartupObject> -->
     <!-- <StartupObject>Homework.Homework</StartupObject> -->
-    <StartupObject>Homework.For_While_DoWhile</StartupObject>
+    <!-- <StartupObject>Homework.For_While_DoWhile</StartupObject> -->
+    <!-- <StartupObject>Method.Method</StartupObject> -->
+    <!-- <StartupObject>GameSnake.Program</StartupObject> -->
+    <!-- <StartupObject>XOGame.Program</StartupObject> -->
+    <!-- <StartupObject>Method.Ref</StartupObject> -->
+    <StartupObject>GameCaro.Ref</StartupObject>
   </PropertyGroup>
 
 </Project>
