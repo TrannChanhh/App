@@ -115,6 +115,10 @@ class Ref
             if (CheckVertical(x, y, "O")) isWin = true;
             if (CheckMainDiagonal(x, y, "X")) isWin = true;
             if (CheckMainDiagonal(x, y, "O")) isWin = true;
+            if (CheoPhu(x, y, ""))
+            {
+                Console.WriteLine("Win");
+            }
         }
         while (!isWin);
     }
@@ -167,19 +171,19 @@ class Ref
         int start_col = 0;
         int end_row = 0;
         int end_col = 0;
-        for (int r = row, c = col; r > 0 || c > 0; r--, c--)
+        for (int r = row, c = col; r > 0 && c > 0; r--, c--)
         {
             start_col = c;
             start_row = r;
         }
-        for (int r = row, c = col; r < n || c < n; r++, c++)
+        for (int r = row, c = col; r < n && c < n; r++, c++)
         {
             end_row = r;
             end_col = c;
         }
-        for (int r = start_row, c = start_col; r <= end_row && c < end_col; r++, col++)
+        int count = 0;
+        for (int r = start_row, c = start_col; r <= end_row && c <= end_col; r++, c++)
         {
-            int count = 0;
             if (Caro_Table[r,c] == player)
             {
                 count++;
@@ -196,5 +200,27 @@ class Ref
         }
         return false;
     }
-    
+    static bool CheoPhu(int row, int col, string playerHam)
+    {
+        bool check = false;
+        int down = 0;
+        int up = 0;
+        string checkXOrO = playerHam;
+        for (int i = 0; i < n; i++)
+        {
+            if (Caro_Table[row + i, col - i] == checkXOrO)
+            {
+                down++;
+            }else break;
+        }
+        for (int i = 1; i < n; i++)
+        {
+            if (Caro_Table[row - i, col + i] == checkXOrO)
+            {
+                up++;
+            }else break;
+        }
+        if((down + up) >= 3) check = true;
+        return check;
+    }
 }
